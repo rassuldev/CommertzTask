@@ -8,7 +8,7 @@ from rest_framework import filters as rest_framework_filters
 from employee.filters import EmployeeFilter
 from rest_framework.permissions import IsAuthenticated
 
-
+#For Employee
 class EmployeeRetrieveView(generics.RetrieveAPIView):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
